@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Doces Mania — Uma doce alegria</title>
-<meta name="description" content="Doces, chocolates, confeitaria, embalagens, artigos de festa e balões personalizados. 4 lojas em Cascavel - PR.">
+<meta name="description" content="Doces, chocolates, confeitaria, embalagens, artigos de festa e muito mais. 4 lojas em Cascavel - PR.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -73,7 +73,7 @@
   .kicker{color:var(--red);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;margin-bottom:.5rem;display:block}
 
   /* Categorias */
-  .cats{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+  .cats{display:flex;flex-wrap:wrap;justify-content:center;gap:1.4rem}.cats .cat{flex:1 1 300px;max-width:364px}
   .cat{background:#fff;border-radius:var(--radius);padding:2rem 1.6rem;box-shadow:var(--shadow);transition:transform .2s;position:relative;overflow:hidden}
   .cat:hover{transform:translateY(-6px)}
   .cat .ico{width:68px;height:68px;border-radius:20px;display:grid;place-items:center;font-size:2.1rem;margin-bottom:1.1rem}
@@ -81,10 +81,8 @@
   .cat p{color:var(--muted);font-size:.98rem}
   .c1 .ico{background:#FDE7E4}.c2 .ico{background:#FFF1C7}.c3 .ico{background:#E2EEF4}
   .c4 .ico{background:#F6E6F7}.c5 .ico{background:#E5F5EA}.c6 .ico{background:#FFE9D6}
-  @media (max-width:860px){.cats{grid-template-columns:1fr 1fr}}
-  @media (max-width:520px){.cats{grid-template-columns:1fr}}
 
-  /* Destaque balões */
+  /* Destaque festas */
   .feature{background:var(--navy);color:#fff;border-radius:32px;padding:3.5rem;display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center;position:relative;overflow:hidden}
   .feature h2{color:#fff;font-size:clamp(1.8rem,3.4vw,2.5rem);margin-bottom:1rem}
   .feature h2 span{color:var(--yellow)}
@@ -166,14 +164,14 @@
       <div class="reveal">
         <span class="tag">🍬 4 lojas em Cascavel - PR</span>
         <h1>Tudo para a sua festa ficar <em>mais doce</em></h1>
-        <p>Doces, chocolates, produtos para confeitaria, embalagens, artigos de festa e balões personalizados. Tudo num lugar só, perto de você.</p>
+        <p>Doces, chocolates, produtos para confeitaria, embalagens e artigos de festa. Tudo num lugar só, perto de você.</p>
         <div class="hero-ctas">
           <a class="btn btn-red" href="#lojas">Encontre a loja mais próxima</a>
           <a class="btn btn-ghost" href="#produtos">Ver produtos</a>
         </div>
         <div class="hero-stats">
           <div><b>4</b><small>lojas na cidade</small></div>
-          <div><b>6</b><small>categorias</small></div>
+          <div><b>5</b><small>categorias</small></div>
         </div>
       </div>
       <div class="hero-art reveal">
@@ -199,7 +197,6 @@
         <div class="cat c3 reveal"><div class="ico">🧁</div><h3>Confeitaria</h3><p>Coberturas, granulados, corantes, formas e ingredientes para quem faz doces.</p></div>
         <div class="cat c4 reveal"><div class="ico">🎁</div><h3>Embalagens</h3><p>Caixas, forminhas, sacos e fitas para deixar cada doce com cara de presente.</p></div>
         <div class="cat c5 reveal"><div class="ico">🎉</div><h3>Artigos de festa</h3><p>Pratos, copos, velas, toalhas e decoração para todos os temas.</p></div>
-        <div class="cat c6 reveal"><div class="ico">🎈</div><h3>Balões personalizados</h3><p>Balões com nome, frase ou tema da festa, feitos do seu jeito.</p></div>
       </div>
     </div>
   </section>
@@ -209,7 +206,7 @@
       <div class="feature reveal">
         <div>
           <h2>Vai ter festa? <span>A gente monta com você.</span></h2>
-          <p>Mande o tema, a data e o número de convidados pelo WhatsApp. Nossa equipe ajuda a escolher doces, embalagens, decoração e balões personalizados.</p>
+          <p>Mande o tema, a data e o número de convidados pelo WhatsApp. Nossa equipe ajuda a escolher doces, embalagens e decoração.</p>
           <a class="btn btn-wa" href="https://wa.me/5545999960183?text=Ol%C3%A1!%20Quero%20ajuda%20para%20montar%20minha%20festa." target="_blank" rel="noopener">Planejar minha festa no WhatsApp</a>
         </div>
         <div class="balloons" aria-hidden="true"><span>🎈</span><span>🎂</span><span>🎈</span></div>
