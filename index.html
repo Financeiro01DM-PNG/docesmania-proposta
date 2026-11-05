@@ -94,8 +94,12 @@
 
   /* Marcas */
   .brands{background:#fff}
-  .brand-strip{background:#fff;border-radius:var(--radius);padding:1.4rem;box-shadow:var(--shadow);display:grid;gap:1rem}
-  .brand-strip img{width:100%;height:auto}
+  .logo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+  .logo{background:#fff;border:1px solid rgba(23,58,77,.08);border-radius:18px;height:120px;display:grid;place-items:center;padding:1.2rem 1.6rem;box-shadow:0 6px 18px rgba(23,58,77,.06);transition:transform .2s,box-shadow .2s}
+  .logo:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .logo img{max-width:100%;max-height:72px;width:auto;height:auto;object-fit:contain}
+  @media (max-width:860px){.logo-grid{grid-template-columns:repeat(3,1fr)}}
+  @media (max-width:560px){.logo-grid{grid-template-columns:repeat(2,1fr);gap:.8rem}.logo{height:96px;padding:1rem}.logo img{max-height:56px}}
 
   /* Lojas */
   .stores{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem}
@@ -205,9 +209,9 @@
     <div class="wrap">
       <div class="feature reveal">
         <div>
-          <h2>Vai ter festa? <span>A gente monta com você.</span></h2>
-          <p>Mande o tema, a data e o número de convidados pelo WhatsApp. Nossa equipe ajuda a escolher doces, embalagens e decoração.</p>
-          <a class="btn btn-wa" href="https://wa.me/5545999960183?text=Ol%C3%A1!%20Quero%20ajuda%20para%20montar%20minha%20festa." target="_blank" rel="noopener">Planejar minha festa no WhatsApp</a>
+          <h2>Vai ter festa? <span>Nossa equipe está pronta pra te ajudar.</span></h2>
+          <p>Mande uma mensagem para nós contando o tema e o número de convidados. Nossa equipe ajuda a escolher as melhores opções para a sua festa.</p>
+          <a class="btn btn-wa" href="https://wa.me/5545999960183?text=Ol%C3%A1!%20Vou%20fazer%20uma%20festa%20e%20gostaria%20de%20ajuda." target="_blank" rel="noopener">Mandar mensagem no WhatsApp</a>
         </div>
         <div class="balloons" aria-hidden="true"><span>🎈</span><span>🎂</span><span>🎈</span></div>
       </div>
@@ -221,9 +225,23 @@
         <h2>Trabalhamos com quem é referência</h2>
         <p>Qualidade garantida das marcas que você já conhece e confia.</p>
       </div>
-      <div class="brand-strip reveal">
-        <img src="https://docesmania.com.br/gallery/logos%201.png?ts=1707489632" alt="Marcas parceiras">
-        <img src="https://docesmania.com.br/gallery/logos%202.png?ts=1707489632" alt="Marcas parceiras">
+      <div class="logo-grid reveal">
+        <div class="logo"><img src="assets/marcas/nestle.svg" alt="Nestlé" loading="lazy"></div>
+        <div class="logo"><img src="assets/marcas/lacta.svg" alt="Lacta" loading="lazy"></div>
+        <div class="logo"><img src="assets/marcas/arcor.png" alt="Arcor" loading="lazy"></div>
+        <div class="logo"><img src="assets/marcas/harald.webp" alt="Harald" loading="lazy"></div>
+        <div class="logo"><img src="assets/marcas/callebaut.svg" alt="Callebaut" loading="lazy"></div>
+        <div class="logo"><img src="assets/marcas/fini.svg" alt="Fini" loading="lazy"></div>
+        <div class="logo"><img src="assets/marcas/dori.png" alt="Dori" loading="lazy"></div>
+        <div class="logo"><img src="assets/marcas/docile.svg" alt="Docile" loading="lazy"></div>
+        <div class="logo"><img src="assets/marcas/florestal.png" alt="Florestal" loading="lazy"></div>
+        <div class="logo"><img src="assets/marcas/mavalerio.webp" alt="Mavalério" loading="lazy"></div>
+        <div class="logo"><img src="assets/marcas/mix.svg" alt="Mix" loading="lazy"></div>
+        <div class="logo"><img src="assets/marcas/fronteira.webp" alt="Doces Fronteira" loading="lazy"></div>
+        <div class="logo"><img src="assets/marcas/dalmavel.webp" alt="Doces Dalmavel" loading="lazy"></div>
+        <div class="logo"><img src="assets/marcas/prafesta.webp" alt="Prafesta" loading="lazy"></div>
+        <div class="logo"><img src="assets/marcas/galvanotek.svg" alt="Galvanotek Embalagens" loading="lazy"></div>
+        <div class="logo"><img src="assets/marcas/copobras.png" alt="Grupo Copobras" loading="lazy"></div>
       </div>
     </div>
   </section>
